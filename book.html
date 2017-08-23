@@ -1,0 +1,148 @@
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Being Brands Photography</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+
+    <body>
+
+      <!-- navbar -->
+      <header class="header" id="banner">
+        <nav class="menu-open">
+          <img src="images/beingbrands_blacklogo.png" alt="Being" height="40px" class="nav_logo_image"> 
+          <ul>
+            <li class="menu-home">
+              <a href="#" class="menu-link">Home</a>
+            </li>
+            <li class="menu-thestudio">
+              <a href="#" class="menu-link">The Studio</a>
+            </li>
+            <li class="menu-services">
+              <a href="#" class="menu-link">Services</a>
+            </li>
+            <li class="menu-rates">
+              <a href="#" class="menu-link">Rates</a>
+            </li>
+            <li class="menu-book">
+              <a href="#" class="menu-link">Book A Space</a>
+            </li>
+            <li class="menu-contact">
+              <a href="#" class="menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-menu">
+          <div class="menu-toggle">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div> 
+          <img src="images/beingbrands_blacklogo.png" alt="Being" height="40px" class="header_logo_image">
+        </div>   
+      </header>
+
+      <div class="banner-info-contact">
+      	<h1 class="name">Book a space.</h1>
+        <!-- <div class="line-divider">line</div> -->
+        <hr>
+      </div>
+
+      <form method="post" action="process.php">
+        <section class="form">
+          <h1 class="name">Hello, I’m <input required="required" type="text" name="First-Name" placeholder="name" class="placeholder-name">.</h1>
+          <h1 class="date">I would love to book the studio on the <input required="required" type="text" placeholder="date" class="placeholder-date" name="Date"> and <input required="required" type="text" placeholder="time" class="placeholder-time" name="Time">.</h1> 
+          
+          <h3 class="hireoptions">The rates that I am after are...</h3>
+          <div class="container">
+            <div class="col-md-6 book-rates">
+              <p class="small-title small-title-rates">Studio hire.</p>
+
+                <input type="radio" id="halfday" value="halfday" class="check" name="studiohire">
+                <label for="halfday" class="check">HALF DAY HIRE</label>
+
+                <input type="radio" id="fullday" value="fullday" class="check" name="studiohire">
+                <label for="fullday" class="check">FULL DAY HIRE</label>
+            </div>
+
+            <div class="col-md-6 book-rates">
+              <p class="small-title small-title-rates">Studio hire with photographer.</p>
+                <input type="radio" id="halfday2" value="halfday" class="check" name="studiohire">
+                <label for="halfday2" class="check">HALF DAY HIRE</label>
+
+                <input type="radio" id="fullday2" value="fullday" class="check" name="studiohire">
+                <label for="fullday2" class="check">FULL DAY HIRE</label>
+            </div>
+          </div>
+
+          <h3 class="shootingoptions">I will be shooting...</h3>
+          <div class="container">
+            <div class="col-md-6 book-rates">
+                <input type="checkbox" id="fashion" value="fashion" class="check" name="Fashion">
+                <label for="fashion" class="check">FASHION</label>
+                <input type="checkbox" id="video" value="video" class="check" name="Video">
+                <label for="video" class="check">VIDEO</label>
+                <input type="checkbox" id="portraiture" value="portraiture" class="check" name="Portraiture">
+                <label for="portraiture" class="check">PORTRAITURE</label>
+                <input type="checkbox" id="portfolio" value="portfolio" class="check" name="Portfolio">
+                <label for="portfolio" class="check">PORTFOLIO</label>
+            </div>
+            <div class="col-md-6 book-rates">
+                <input type="checkbox" id="tvc" value="tvc" class="check" name="TVC">
+                <label for="tvc" class="check">TVC</label>
+                <input type="checkbox" id="product" value="product" class="check" name="Product">
+                <label for="product" class="check">PRODUCT</label>
+                <input type="checkbox" id="food" value="food" class="check" name="Food">
+                <label for="food" class="check">FOOD</label>
+                <input type="checkbox" id="other" value="other" class="check" name="Other">
+                <label for="other" class="check">OTHER</label>
+            </div>
+          </div>
+          <h3 class="email">I can be contacted at <input required="required" type="email" placeholder="email address" class="placeholder-email" name="Email"> or <input required="required" type="text" placeholder="phone" class="placeholder-phone" name="Phone">.</h3>
+          <hr>
+          <button class="submit">SUBMIT</button>
+        </section>
+      </form>
+
+      <footer>
+          <div class="footercontainer">
+            <div class="col-md-4 social">
+              <img id="footerlogo" src="images/beingbrands_whitelogo.png" alt="Being">
+              <a class="footer_icon_facebook" href="#"></a>              
+              <a class="footer_icon_linkedin" href="#"></a>
+              <a class="footer_icon_instagram" href="#"></a>
+            </div>
+            <div class="col-md-4 address">
+              <p>Suite 4, 37B Alexandra Street <br>Hunters Hill NSW 2110</p>
+              <p>(02) 9816 4068</p>
+            </div>
+            <div class="col-md-4 contactus">
+              <p>Want to work with us as much <br>as we want to work with you?</p>
+              <a id="getintouch" herf="#">Get in touch today!</a>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
