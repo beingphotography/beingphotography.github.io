@@ -7,6 +7,7 @@
 html {
 	line-height: 1.26316em;
 	letter-spacing: 0.06842em; 
+	height: 100%;
 
 }
 
@@ -23,16 +24,14 @@ body {
     display: table;
 }
 
-.header {
+.homepagebackground {
 	background: url(../images/beingbrands_homepage4.jpg) no-repeat center center;
 	background-size: cover;
-	height: 900px;
+	height: 100vh;
 	margin: 0;
-	position: relative;
 	top: 0;
 	left: 0;
 }
-
 
 
 .header_logo_image {
@@ -44,6 +43,7 @@ body {
     margin-bottom: 50px;
     max-width: 100px;
     height: auto;
+    top: 0;
 
 }
 
@@ -60,9 +60,9 @@ span {
 	transition: all .2s ease-in-out;
 }
 
-span.homepage {
+/*span.homepage {
 	background: #fff;
-}
+}*/
 
 
 span.line1 {
@@ -145,6 +145,7 @@ ul {
     height: 20px;
     width: 20px;
     border-radius: 20px;
+    z-index: 0 !important;
 }
 
 .tooltip .tooltiptext {
@@ -310,13 +311,19 @@ ul {
 }
 
 footer {
-	padding: 65px 0 180px 0;
+	padding: 65px 0 65px 0;
 	background-color: #141314;
 	color: #fff;
 	font-size: 1.6rem;
-/*	position: absolute;*/
-	bottom: 0;
+	position: absolute;
+	/*bottom: 0;*/
 	left: 0;
+	right: 0;
+}
+
+.footer-home {
+	bottom: 0;
+	
 }
 
 .footercontainer {
@@ -357,6 +364,7 @@ a:hover {
 	width: 20px;
 	border-radius: 10px;
 	padding: 10px;
+	display: inline-block;
 }
 
 .footer_icon_linkedin div{
@@ -366,6 +374,7 @@ a:hover {
 	width: 20px;
 	border-radius: 10px;
 	padding: 10px;
+	display: inline-block;
 }
 
 .footer_icon_instagram div{
@@ -376,12 +385,15 @@ a:hover {
 	border-radius: 10px;
 	border: solid 0;
 	padding: 10px;
+	display: inline-block;
 }
 
 .socials {
-	width: 100px;
-	display: block; 
 	margin-top: 20px;
+}
+
+.social-icons  {
+	padding-right: 15px;
 }
 
 
@@ -694,11 +706,6 @@ h3 {
 
 
 
-
-
-
-
-
 /*Book A Space*/
 
 h1.name {
@@ -898,16 +905,61 @@ hr#contact-line {
 
 	}
 
+	.tooltip3 {
+		left: 27%;
+	}
+
+
+
 
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1030px) {
+
+	.tooltip{
+		left: 63%;
+	}
+
+	.tooltip3 {
+		left: 23%;
+	}
+
+	.tooltip4 {
+		left: 36%;
+	}
+}
+
+
 @media only screen and (max-width : 1024px) {
 	
+
 	#footerlogo {
-		margin-left: 90px;
-		margin-bottom: 120px;
+		/*margin-left: 90px;*/
+		/*margin-bottom: 120px;*/
 	}
+
+/*	.footerlogo {
+		width: 20%;
+		margin-left: 140px;
+		
+	}
+
+	.address {
+		width: 29%;
+
+
+	}*/
+
+	.tooltip3 {
+	    left: 27%;
+	}
+
+
+
+
+
+
 
 	/*tooltip*/
 	.tooltip {
@@ -969,13 +1021,13 @@ hr#contact-line {
 
 	/*footer*/
 
-	footer {
+/*	footer {
 		padding: 60px 0 20px 0;
 		font-size: 1.5rem;
 		letter-spacing: 1.4px;
-	}
+	}*/
 
-	.footercontainer {
+/*	.footercontainer {
 		margin: 0 auto;
 	}
 
@@ -990,13 +1042,23 @@ hr#contact-line {
 		margin-bottom: 120px;
 	}
 
-	.address {
-		margin-left: 20px;
+	.footerlogo {
+		margin-left: 0px;
 	}
 
-	.col-md-4 {
-		display: inline-block;
+	.footerlogo {
+		width: auto;
+		margin-left: 0px;
 	}
+
+	.address {
+		width: auto;
+
+	}*/
+
+	/*.col-md-4 {
+		display: inline-block;
+	}*/
 
 	/*tooltip*/
 	.tooltip {
@@ -1075,10 +1137,10 @@ hr#contact-line {
 		font-size: 20px;
 	}
 
-	/*footer {
-		height: 400px;
-	}*/
-
+/*	footer {
+		height: 500px;
+	}
+*/
 }
 
 
@@ -1086,16 +1148,13 @@ hr#contact-line {
 	
 	/*footer*/
 
-	footer {
+/*	footer {
 		padding: 70px 0 40px 0;
 		font-size: 14px;
 		letter-spacing: 1.4px;
 		max-width: 100%;
-	
 	}
-
 	
-
 	footer p {
 		padding-bottom: 15px;
 	}
@@ -1104,8 +1163,23 @@ hr#contact-line {
 		max-width: 100px;
 		height: auto;
 		margin-left: 100px;
-		margin-bottom:  200px;
+		margin-bottom: 200px;
+		margin: 0 auto;
 	}
+
+	.footerlogo {
+		margin-left: 10px;
+	}
+
+	.footerlogo {
+		width: 20%;
+		margin-left: 40px;
+	}
+
+	.address {
+		width: 33%;
+
+	}*/
 
 	/*.address {
 		margin-left: 20px;
@@ -1257,6 +1331,7 @@ hr#contact-line {
 }
 
 @media only screen and (max-width : 767px) {
+	
 	#book-title {
 		text-align: center;
 		font-size: 22px;
@@ -1287,20 +1362,15 @@ hr#contact-line {
 
 }
 
-@media only screen and (max-width : 768px) {
-
-	#footerlogo {
-		display: block;
-		margin: 0 auto;
-	}
-
-
-}
 
 @media only screen and (max-width : 700px) {
 	.photography {
 		height: 450px;
 	}
+
+/*	footer {
+		height: 400px;
+	}*/
 
 	
 }
@@ -1317,7 +1387,7 @@ hr#contact-line {
 		padding: 60px 0 90px 0;
 		font-size: 1.5rem;
 		letter-spacing: 1.4px;
-		height: 400px;
+		height: 450px;
 	}
 
 	footer p {
@@ -1329,7 +1399,21 @@ hr#contact-line {
 		height: auto;
 		margin: 0 auto;
 		display: block;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
+	}
+
+	.footerlogo {
+		margin-left: 10px;
+	}
+
+	.footerlogo {
+		width: auto;
+		margin-left: 40px;
+	}
+
+	.address {
+		width: auto;
+
 	}
 
 	.address {
@@ -1344,6 +1428,20 @@ hr#contact-line {
 
 	.col-md-4 {
 		display: block;
+	}
+
+	.socials {
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	.social-icons {
+		padding: 10px;
+	}
+
+	.footerlogo {
+    	margin-left: 0;
 	}
 
 	/*thestudio*/
