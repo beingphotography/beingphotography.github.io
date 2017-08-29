@@ -35,10 +35,10 @@ $(document).ready(function(){
 //      }
 // });
 
-$('nav').on('touchstart touchmove', function(e){ 
-     //prevent native touch activity like scrolling
-     e.preventDefault(); 
-});
+// $('nav').on('touchstart touchmove', function(e){ 
+//      //prevent native touch activity like scrolling
+//      e.preventDefault(); 
+// });
 
     // $('body').unbind('mousewheel');
 
