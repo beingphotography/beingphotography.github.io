@@ -1536,6 +1536,10 @@ hr#contact-line {
 		font-size: 1.3rem;
 	}
 
+	#scrollup {
+		visibility: visible;
+	}
+
 	/*book*/
 
 	h3.email {
