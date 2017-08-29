@@ -27,12 +27,17 @@ $(document).ready(function(){
      }
 });
 
-        $('nav').on({
-    'touchmove': function(e) {
-        if (e.target.id == 'el') return;
-        e.preventDefault();
-        e.stopPropagation();
-     }
+//         $('nav').on({
+//     'touchmove': function(e) {
+//         if (e.target.id == 'el') return;
+//         e.preventDefault();
+//         e.stopPropagation();
+//      }
+// });
+
+$('nav').on('touchstart touchmove', function(e){ 
+     //prevent native touch activity like scrolling
+     e.preventDefault(); 
 });
 
     // $('body').unbind('mousewheel');
