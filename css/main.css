@@ -1575,25 +1575,25 @@ hr#contact-line {
 
 	/*book*/
 
-/*	h3.email {
-    	width: 350px;
+	h3.email {
+    	width: auto;
 	}
 
 	h1.name {
-    	width: 190px;
+    	width: auto;
 	}
     
     .placeholder-name {
-    	width: 120px;
+    	width: auto;
 	}
 
 	.placeholder-date {
-    	width: 120px;
+    	width: auto
 	}	
 
 	.placeholder-time {
-    	width: 120px;
-	}*/
+    	width: auto;
+	}
 
 	.slideimage {
 		/*max-width: 100%;*/
