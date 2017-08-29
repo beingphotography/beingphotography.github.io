@@ -1576,7 +1576,7 @@ hr#contact-line {
 	/*book*/
 
 	h3.email {
-    	width: 320px;
+    	width: 350px;
 	}
 
 	h1.name {
@@ -1584,7 +1584,15 @@ hr#contact-line {
 	}
     
     .placeholder-name {
-    	width: 120px;
+    	width: 130px;
+	}
+
+	.placeholder-date {
+    	width: 130px;
+	}	
+
+	.placeholder-time {
+    	width: 130px;
 	}
 
 	.slideimage {
