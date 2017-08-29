@@ -1510,6 +1510,16 @@ hr#contact-line {
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
 
+	/*menu*/
+	a.menu-link {
+    	/*font-size: 34px;*/
+    	line-height: 5.4rem;
+	}
+
+	.menu-toggle {
+		margin-left: 34px;
+	}
+
 	/*footer*/
 
 	footer {

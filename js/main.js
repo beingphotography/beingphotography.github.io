@@ -27,6 +27,14 @@ $(document).ready(function(){
      }
 });
 
+        $('nav').on({
+    'touchstart': function(e) {
+        if (e.target.id == 'el') return;
+        e.preventDefault();
+        e.stopPropagation();
+     }
+});
+
     // $('body').unbind('mousewheel');
 
 
