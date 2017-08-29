@@ -1584,15 +1584,15 @@ hr#contact-line {
 	}
     
     .placeholder-name {
-    	width: auto;
+    	width: 160px;
 	}
 
 	.placeholder-date {
-    	width: 170px;
+    	width: 160px;
 	}	
 
 	.placeholder-time {
-    	width: 170px;
+    	width: 160px;
 	}
 
 	.slideimage {
