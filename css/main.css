@@ -1277,7 +1277,7 @@ hr#contact-line {
 	}
 
 	.footer-home {
-		bottom: -500px;
+		bottom: -510px;
 	}
 
 	#footerlogo {
@@ -1555,10 +1555,18 @@ hr#contact-line {
 		margin-left: 20px;
 	}
 
+	#mobile-call-to-action {
+		height: 400px;
+	}
+
 	/*footer*/
 
 	footer {
 		font-size: 1.3rem;
+	}
+
+	.footer-home {
+		bottom: -550px;
 	}
 
 	#scrollup {
