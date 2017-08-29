@@ -27,13 +27,6 @@ $(document).ready(function(){
      }
 });
 
-//         $('nav').on({
-//     'touchmove': function(e) {
-//         if (e.target.id == 'el') return;
-//         e.preventDefault();
-//         e.stopPropagation();
-//      }
-// });
 
 // $('nav').on('touchstart touchmove', function(e){ 
 //      //prevent native touch activity like scrolling
@@ -48,6 +41,13 @@ $(document).ready(function(){
 $(".viewmore").click(function() {
     $('html, body').animate({
         scrollTop: $(".section2").offset().top
+    }, 1000);
+    return false;
+});
+
+$("#scrollup").click(function() {
+    $('html, body').animate({
+        scrollTop: $("header").offset().top
     }, 1000);
     return false;
 });

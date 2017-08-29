@@ -410,6 +410,10 @@ a:hover {
 	padding-right: 15px;
 }
 
+#scrollup {
+	visibility: hidden;
+}
+
 
 
 /*thestudio*/
@@ -1240,7 +1244,7 @@ hr#contact-line {
 		padding: 60px 0 90px 0;
 		font-size: 1.5rem;
 		letter-spacing: 1.4px;
-		height: 450px;
+		height: 500px;
 	}
 
 	footer p {
@@ -1248,7 +1252,7 @@ hr#contact-line {
 	}
 
 	.footer-home {
-		bottom: -198px;
+		bottom: -248px;
 	}
 
 	#footerlogo {
@@ -1276,6 +1280,12 @@ hr#contact-line {
 	.contactus {
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	#scrollup {
+		margin-top: 60px;
+		font-style: italic;
+		visibility: visible;
 	}
 
 	.col-md-4 {
