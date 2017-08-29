@@ -1,3 +1,5 @@
+/*burger menu*/
+
 $(document).ready(function(){
     $("nav").hide(); 
 
@@ -10,31 +12,38 @@ $(document).ready(function(){
 			$("nav").addClass("isVisible");
 
     	}
-    });
 
+    });   
   });
 
 
+/*disable scroll*/
+
+    $('nav').on({
+    'mousewheel': function(e) {
+        if (e.target.id == 'el') return;
+        e.preventDefault();
+        e.stopPropagation();
+     }
+});
+
+    // $('body').unbind('mousewheel');
 
 
+/*target scroll down*/
 
-// $(".slider > div:gt(0)").hide();
+$(".viewmore").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".section2").offset().top
+    }, 1000);
+    return false;
+});
 
-// setInterval(function() { 
-//   $('.slider > div:first')
-//     .fadeOut(1000)
-//     .next()
-//     .fadeIn(1000)
-//     .end()
-//     .appendTo('.slider');
-// },  3000);
-
+/*carousel slide*/
 
 
 $('.carousel').carousel({
   interval: 2000
 })
-
-
 
 

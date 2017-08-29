@@ -35,16 +35,14 @@ body {
 
 
 .header_logo_image {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    margin-bottom: 50px;
     max-width: 100px;
     height: auto;
-    top: 0;
-
+    z-index: 2;
+    position: absolute;
+    top: 53px;
+    margin: 0 auto;
+    display: block;
+    left: calc(50% - 50px);
 }
 
 span {
@@ -60,10 +58,13 @@ span {
 	transition: all .2s ease-in-out;
 }
 
-/*span.homepage {
+span.homepage {
 	background: #fff;
-}*/
+}
 
+header {
+	height: 100vh;
+}
 
 span.line1 {
 	margin-top: 40px;
@@ -75,18 +76,31 @@ span.line1 {
 	margin-left: 50px;
 }
 
-nav.menu-open-homepage {
+.menu-open-homepage {
     opacity: 1;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     width: 100%;
     background-color: #f1eadd;
-    display: block;
-    z-index: 1;
+    display: flex;	
+	flex-direction: column;
+	justify-content: center;   
+}
+
+.menu-open {
+    opacity: 1;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: #f1eadd;
+    display: flex;	
+	flex-direction: column;
+	justify-content: center;
+    
 }
 
 .nav_logo_image {
-	margin-top: 78px;
+	margin-top: 0px;
 	margin-left: auto;
     margin-right: auto;
     margin-bottom: 90px;
@@ -108,11 +122,11 @@ nav {
 }
 
 a.menu-link {
-	font-size: 40px;
+	font-size: 55px;
 	font-weight: bold;
 	text-decoration: none;
 	transition: .3s ease-in-out;
-	line-height: 7.73684rem;
+	line-height: 8.73684rem;
 	color: #141314;
 }
 
@@ -133,6 +147,7 @@ ul {
 	list-style-type: none; 
 	text-align: center;
 	padding: 0;
+	margin-top: 55px;
 }
 
 .tooltip {
@@ -140,7 +155,7 @@ ul {
     display: inline-block;
     opacity: 1;
     left: 61%;
-    top: 22%;
+    top: 19%;
     background-color: #fff;
     height: 20px;
     width: 20px;
@@ -185,7 +200,7 @@ ul {
     display: inline-block;
     opacity: 1;
     left: 53%;
-    top: 40%;
+    top: 33%;
     background-color: #fff;
     height: 20px;
     width: 20px;
@@ -227,8 +242,8 @@ ul {
     position: absolute;
     display: inline-block;
     opacity: 1;
-    left: 30%;
-    top: 23%;
+    left: 29%;
+    top: 17%;
     background-color: #fff;
     height: 20px;
     width: 20px;
@@ -270,8 +285,8 @@ ul {
     position: absolute;
     display: inline-block;
     opacity: 1;
-    left: 40%;
-    top: 50%;
+    left: 39%;
+    top: 41%;
     background-color: #fff;
     height: 20px;
     width: 20px;
@@ -323,7 +338,7 @@ footer {
 
 .footer-home {
 	bottom: 0;
-	
+
 }
 
 .footercontainer {
@@ -332,7 +347,6 @@ footer {
 }
 
 footer #getintouch {
-	color: #fff;
 	font-weight: bold;
 	border-bottom: solid 1.5px #fff;
 	padding-bottom: 10px;
@@ -877,7 +891,6 @@ hr#contact-line {
 
 
 
-/*hamburger css*/
 
 
 
@@ -887,6 +900,7 @@ hr#contact-line {
 
 
 /* Large Devices, Wide Screens */
+
 @media only screen and (max-width : 1200px) {
 	span.homepage {
 		background: #141314;
@@ -908,9 +922,6 @@ hr#contact-line {
 	.tooltip3 {
 		left: 27%;
 	}
-
-
-
 
 }
 
@@ -934,33 +945,6 @@ hr#contact-line {
 @media only screen and (max-width : 1024px) {
 	
 
-	#footerlogo {
-		/*margin-left: 90px;*/
-		/*margin-bottom: 120px;*/
-	}
-
-/*	.footerlogo {
-		width: 20%;
-		margin-left: 140px;
-		
-	}
-
-	.address {
-		width: 29%;
-
-
-	}*/
-
-	.tooltip3 {
-	    left: 27%;
-	}
-
-
-
-
-
-
-
 	/*tooltip*/
 	.tooltip {
 	    left: 65%;
@@ -971,7 +955,7 @@ hr#contact-line {
 	}
 
 	.tooltip3 {
-	    left: 23%;
+	    left: 26%;
 	}
 
 	.tooltip4 {
@@ -1019,46 +1003,6 @@ hr#contact-line {
 
 @media only screen and (max-width : 990px) {
 
-	/*footer*/
-
-/*	footer {
-		padding: 60px 0 20px 0;
-		font-size: 1.5rem;
-		letter-spacing: 1.4px;
-	}*/
-
-/*	.footercontainer {
-		margin: 0 auto;
-	}
-
-	footer p {
-		padding-bottom: 15px;
-	}
-
-	#footerlogo {
-		max-width: 100px;
-		height: auto;
-		margin-left: 50px;
-		margin-bottom: 120px;
-	}
-
-	.footerlogo {
-		margin-left: 0px;
-	}
-
-	.footerlogo {
-		width: auto;
-		margin-left: 0px;
-	}
-
-	.address {
-		width: auto;
-
-	}*/
-
-	/*.col-md-4 {
-		display: inline-block;
-	}*/
 
 	/*tooltip*/
 	.tooltip {
@@ -1077,113 +1021,21 @@ hr#contact-line {
 	    display: none;
 	}
 
-/*	.tooltip {
-	    opacity: 1;
-	    left: 65%;
-	    top: 22%;
-	    height: 14px;
-	    width: 14px;
-	}
-
-	.tooltip .tooltiptext {
-		visibility: visible;
-	    width: 137px;
-	    font-size: 13px;
-	    opacity: 1;
-	    bottom: -68px;
-	    left: 35px;
-	}
-
-	.tooltip2 {
-	    opacity: 1;
-	    left: 53%;
-	    top: 40%;
-	    height: 14px;
-	    width: 14px;
-	}
-
-	.tooltip2 .tooltiptext2 {
-		visibility: visible;
-	    width: 200px;
-	    font-size: 13px;
-	    opacity: 1;
-	    top: 32px;
-	    right: -173px;
-	}
-
-	.tooltip3 {
-	    opacity: 1;
-	    left: 40%;
-	    top: 23%;
-	    height: 14px;
-	    width: 14px;
-	}
-
-	.tooltip3 .tooltiptext3 {
-		visibility: visible;
-	    width: 140px;
-	    font-size: 13px;
-	    opacity: 1;
-	    right: 40px;
-	    bottom: -32px;
-	}*/
-
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 900px) {
+	
 	.block-title {
 		font-size: 20px;
 	}
 
-/*	footer {
-		height: 500px;
-	}
-*/
 }
 
 
 @media only screen and (max-width : 768px) {
 	
-	/*footer*/
-
-/*	footer {
-		padding: 70px 0 40px 0;
-		font-size: 14px;
-		letter-spacing: 1.4px;
-		max-width: 100%;
-	}
-	
-	footer p {
-		padding-bottom: 15px;
-	}
-
-	#footerlogo {
-		max-width: 100px;
-		height: auto;
-		margin-left: 100px;
-		margin-bottom: 200px;
-		margin: 0 auto;
-	}
-
-	.footerlogo {
-		margin-left: 10px;
-	}
-
-	.footerlogo {
-		width: 20%;
-		margin-left: 40px;
-	}
-
-	.address {
-		width: 33%;
-
-	}*/
-
-	/*.address {
-		margin-left: 20px;
-	}*/
 
 	.col-md-4 {
 		display: inline-block;
@@ -1364,21 +1216,22 @@ hr#contact-line {
 
 
 @media only screen and (max-width : 700px) {
+	
 	.photography {
 		height: 450px;
 	}
 
-/*	footer {
-		height: 400px;
-	}*/
-
-	
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
 	h1 {
 		font-size: 35px;
+	}
+
+	.homepagebackground {
+		height: 100vh;
 	}
 
 	/*footer*/
@@ -1394,6 +1247,10 @@ hr#contact-line {
 		padding-bottom: 15px;
 	}
 
+	.footer-home {
+		bottom: -19px;
+	}
+
 	#footerlogo {
 		max-width: 100px;
 		height: auto;
@@ -1404,11 +1261,6 @@ hr#contact-line {
 
 	.footerlogo {
 		margin-left: 10px;
-	}
-
-	.footerlogo {
-		width: auto;
-		margin-left: 40px;
 	}
 
 	.address {
@@ -1446,7 +1298,7 @@ hr#contact-line {
 
 	/*thestudio*/
 
-	.banner-info{
+	.banner-info {
 		height: 400px;
 	}
 
@@ -1491,7 +1343,7 @@ hr#contact-line {
 
 
 	.features {
-	height: 720px;
+	height: 900px;
 
 	}
 
@@ -1586,21 +1438,24 @@ hr#contact-line {
 	}
 
 	.rates-slider {
-		margin-top: 300px;
-		margin-bottom: 70px;
+		margin-top: 310px;
+		margin-bottom: 0;
+		height: 500px;
 	}
 
-	#studiohireblock {
+	#studiohire {
 		margin-top: 0;
 		position: absolute;
 	}
 
 	.rates {
-		margin-top: 100px;
+		margin-top: 0;
 	}
 
 	.rates2-slider {
-		margin-bottom: 70px;
+		margin-top: 10px;
+		margin-bottom: 0;
+		height: 500px;
 	}
 
 	/*book*/
